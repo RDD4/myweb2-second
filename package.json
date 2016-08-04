@@ -1,0 +1,17 @@
+{
+  "name": "myweb2",
+  "version": "1.0.0",
+  "description": "express",
+  "main": "express.js",
+  "scripts": {
+    "test": "jasmine"
+  },
+  "author": "rendandan",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.14.0"
+  },
+  "devDependencies": {
+    "superagent": "^2.1.0"
+  }
+}
