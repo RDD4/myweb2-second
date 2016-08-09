@@ -1,11 +1,12 @@
+/*global require*/
 'use strict';
 const repl = require('repl');
 
 const Router = require('./router/Router');
 const Shell = require('./shell/Shell');
-const InitActionMonitor = require('./InitActionMonitor');
-const BarcodeActionMonitor = require('./BarcodeActionMonitor');
-const PostcodeActionMonitor = require('./PostcodeActionMonitor');
+const InitActionMonitor = require('./actions/InitActionMonitor');
+const BarcodeActionMonitor = require('./actions/BarcodeActionMonitor');
+const PostcodeActionMonitor = require('./actions/PostcodeActionMonitor');
 
 let actions = [
     new InitActionMonitor(),

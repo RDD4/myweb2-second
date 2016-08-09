@@ -38,7 +38,7 @@ function calculateCheckDigit(formattedPostcode) {
 //匹配
 function matchBarcode(formattedPostcode, allRegulars, checkDigit) {
     let finalBarcode = Array.from((formattedPostcode + checkDigit)).map(function (info) {
-        return " "+allRegulars[parseInt(info)];
+        return " " + allRegulars[parseInt(info)];
     });
     finalBarcode = finalBarcode.join("");
     return finalBarcode;
@@ -47,10 +47,12 @@ function matchBarcode(formattedPostcode, allRegulars, checkDigit) {
 function printBarcode(finalBarcode) {
     return "|" + finalBarcode + " |";
 }
-class Postcode{
-    transform(postcode){
+class Postcode {
+    transform(postcode) {
         let isLegal = isLegalPostcode(postcode);
-        if (!isLegal) {return undefined;}
+        if (!isLegal) {
+            return undefined;
+        }
         let formattedPostcode = formatPostcode(postcode);
         let checkDigit = calculateCheckDigit(formattedPostcode);
         let finalBarcode = matchBarcode(formattedPostcode, allRegulars, checkDigit);

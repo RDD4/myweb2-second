@@ -9,9 +9,20 @@
   "author": "rendandan",
   "license": "ISC",
   "dependencies": {
-    "express": "^4.14.0"
+    "express": "^4.14.0",
+    "jquery": "^3.1.0"
   },
   "devDependencies": {
+    "cors": "^2.7.1",
+    "jquery": "^3.1.0",
     "superagent": "^2.1.0"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RDD4/myweb2.git"
+  },
+  "bugs": {
+    "url": "https://github.com/RDD4/myweb2/issues"
+  },
+  "homepage": "https://github.com/RDD4/myweb2#readme"
 }

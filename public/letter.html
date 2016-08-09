@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <title>PostcodeAndBarcode</title>
+    <style type="text/css">
+
+        button {
+            box-shadow: 2px 4px 6px #000;
+            /*padding: 10px 10px;
+            margin: 50px 50px;*/
+        }
+
+        .head1 {
+            color: darkviolet;
+            font-style: oblique
+        }
+
+        .head2 {
+            color: orange;
+            font-style: italic
+        }
+
+        .form {
+            color: hotpink
+        }
+
+        .radio {
+            color: #5cb85c
+        }
+
+        .form {
+            margin: 5% 5%
+        }
+        .table1{
+            overflow-y: scroll;
+            height: 150px;
+            /*overflow: hidden;
+            display: block*/
+        }
+        #all {
+            border: 3px solid mediumslateblue;
+            margin: 10% 10%;
+            text-align: center;
+            background-color: #FDFCD1;
+
+        }
+    </style>
+    <script src="./jquery.min.js"></script>
+    <script src="./letter.js"></script>
+
+</head>
+<body>
+<section id="all">
+    <!--POST-NET-->
+
+    <div class="head1" style="margin-bottom:30px">
+        <p class="text-center">
+        <h1> POST-NET</h1>
+    </div>
+    <!--表单-->
+    <div class="form" style="margin-bottom:30px">
+        <form class="form-horizontal" role="form" style="width:90%">
+            <div class="form-group" style="margin-bottom:15px">
+                <label class="control-label col-sm-2" for="exampleInputCode">Input&nbsp;code</label>
+                <div class="col-sm-10">
+                    <input type="text" class="form-control" id="exampleInputCode"
+                           placeholder="Please input code here">
+                    <span id="help" style="color:red;"></span><br>
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="control-label col-sm-2">Result</label>
+                <span class="return" style="color:black"></span>
+                <!--<div class="col-sm-10">
+                    <input type="text" class="form-control" id="exampleOutResult">
+                </div>-->
+            </div>
+        </form>
+
+    </div>
+    <!--单选框-->
+    <div class="radio" style="margin-bottom:30px">
+        <label class="radio-inline">
+            <input type="radio" id="barcode" value="option1" name="1" checked> Barcode to Postcode
+        </label>
+        <label class="radio-inline">
+            <input type="radio" id="postcode" value="option2" name="1"> Postcode to Barcode
+        </label>
+    </div>
+    <!--按钮-->
+    <div class="button" style="margin-bottom:40px">
+        <button type="button" id="button" class="btn btn-info">
+            <span class="glyphicon glyphicon-star" aria-hidden="true"></span> <strong>OK</strong>
+        </button>
+    </div>
+    <!--History-->
+    <div class="head2" style="margin-bottom:30px">
+        <p class="text-center">
+        <h2>History</h2>
+    </div>
+    <!--表格-->
+    <div class="table1" name="tab">
+        <table class="table table-hover" style="width:80%" align="center">
+            <tr>
+                <td style="width: 354px;height: 37px"><strong>Code</strong></td>
+                <td style="width: 354px;height: 37px"><strong>Result</strong></td>
+            </tr>
+        </table>
+    </div>
+</section>
+</body>
+</html>e
